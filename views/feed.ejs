@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/feed.css">
+</head>
+<body>
+    <div id="columns">
+
+      <% allPost.forEach(function(post){ %>
+        <figure>
+            <img src="/uploads/<%=post.image%>">
+              <figcaption><%=post.postText %></figcaption>
+              </figure>
+              <%});%>
+        <figure>
+        <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/cinderella.jpg">
+          <figcaption>Cinderella wearing European fashion of the mid-1860’s</figcaption>
+          </figure>
+         <figure>
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/ariel.jpg">
+          <figcaption>Ariel wearing an evening gown of the 1890’s</figcaption>
+          </figure>
+        
+          <figure>
+          <img src="//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/tiana.jpg">
+          <figcaption>Tiana wearing the <i>robe de style</i> of the 1920’s</figcaption>
+          </figure>	
+        <small>Art &copy; <a href="//clairehummel.com">Claire Hummel</a></small>
+          </div>
+    
+</body>
+</html>

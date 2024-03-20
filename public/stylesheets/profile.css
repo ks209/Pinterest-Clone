@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #e9e9e9;
+  overflow-x: hidden;
+  padding-top: 90px;
+  font-family: "Poppins", sans-serif;
+  margin: 0 100px;
+}
+
+.profile-header {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  height: 190px;
+  position: relative;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img {
+  float: left;
+  width: 340px;
+  height: 200px;
+}
+
+.profile-img img {
+  border-radius: 50%;
+  height: 230px;
+  width: 230px;
+  border: 5px solid #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 50px;
+  top: 20px;
+  z-index: 5;
+  background: #fff;
+}
+
+.profile-nav-info {
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+.profile-nav-info h3 {
+  font-variant: small-caps;
+  font-size: 2rem;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.profile-nav-info .address {
+  display: flex;
+  font-weight: bold;
+  color: #777;
+}
+
+.profile-nav-info .address p {
+  margin-right: 5px;
+}
+
+.profile-option {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+  background: #e40046;
+}
+
+.detail {
+    width: 100%;
+    height: 48px;
+    margin: 5px;
+    padding: 15px;
+    font-size: 15px;
+    color: gray;
+    border: 2px solid rgb(218, 214, 214);
+    border-radius: 15px;
+  }
+  .detail:focus {
+    box-shadow: 0px -7px 3px -2px rgba(15, 91, 231, 0.4),
+      0px 7px 3px -2px rgba(15, 91, 231, 0.4),
+      7px 0px 3px -2px rgba(15, 91, 231, 0.4),
+      -7px 0px 3px -2px rgba(15, 91, 231, 0.4);
+    outline: none;
+  }
+
+.profile-option:hover {
+  background: #fff;
+  border: 1px solid #e40046;
+}
+.profile-option:hover .notification i {
+  color: #e40046;
+}
+
+.profile-option:hover span {
+  background: #e40046;
+}
+
+.profile-option .notification i {
+  color: #fff;
+  font-size: 1.2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+
+
+.main-bd {
+  width: 100%;
+  display: flex;
+  padding-right: 15px;
+}
+
+.profile-side {
+  width: 300px;
+  background: #fff;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+  padding: 90px 30px 20px;
+  font-family: "Bree Serif", serif;
+  margin-left: 10px;
+  z-index: 99;
+}
+
+.profile-side p {
+  margin-bottom: 7px;
+  color: #333;
+  font-size: 14px;
+}
+
+.profile-side p i {
+  color: #e40046;
+  margin-right: 10px;
+}
+
+.mobile-no i {
+  transform: rotateY(180deg);
+  color: #e40046;
+}
+
+  
+  /* Style for the custom file input button */
+  .custom-file-upload {
+    display: inline-block;
+    padding: 32px 32px;
+    cursor: pointer;
+    background-color: rgb(230, 0, 69,0.1);
+    color: #b66767;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  #file-upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 1vw;
+  }
+
+  #file-upload button{
+    display: inline-block;
+    padding: 32px 32px;
+    cursor: pointer;
+    background-color: rgb(230, 0, 69,0.1);
+    color: #b66767;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Hover effect for the custom file input button */
+  .custom-file-upload:hover {
+    background-color: #e40046;
+  }
+
+button.chatbtn {
+    display: inline-block;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #e40046;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 5px ;
+}
+
+button.chatbtn:hover,
+button.createbtn:hover, .delete {
+  background: rgba(288, 0, 70, 0.9);
+}
+
+button.chatbtn i,
+button.createbtn i {
+  margin-right: 5px;
+}
+
+
+.profile-body {
+  width: 100%;
+  z-index: -1;
+}
+
+.tab {
+  display: none;
+}
+
+.tab {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.delete{
+  display: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: #e40046;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 5px ;
+}
+
+@media (max-width: 1100px) {
+  .profile-side {
+    width: 250px;
+    padding: 90px 15px 20px;
+  }
+
+  .profile-img img {
+    height: 200px;
+    width: 200px;
+    left: 50px;
+    top: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    margin: 0 20px;
+  }
+
+  .profile-header {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .profile-img {
+    float: left;
+    width: 100%;
+    height: 200px;
+  }
+
+  .profile-img img {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    left: 0px;
+  }
+
+  .profile-nav-info {
+    text-align: center;
+  }
+
+  .profile-option {
+    right: 20px;
+    top: 75%;
+    transform: translateY(50%);
+  }
+
+  .main-bd {
+    flex-direction: column;
+    padding-right: 0;
+  }
+
+  .profile-side {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 5px 0;
+  }
+
+  .profile-nav-info .address {
+    justify-content: center;
+  }
+
+  .user-rating {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 400px) {
+
+  
+
+  .profile-option {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 83%;
+  }
+
+  .profile-option .notification .alert-message {
+    top: -3px;
+    right: -4px;
+    padding: 4px;
+    height: 15px;
+    width: 15px;
+    font-size: 0.7rem;
+  }
+
+  .profile-nav-info h3 {
+    font-size: 1.9rem;
+  }
+
+  .profile-nav-info .address p,
+  .profile-nav-info .address span {
+    font-size: 0.7rem;
+  }
+}
+#see-more-bio,
+#see-less-bio {
+  color: blue;
+  cursor: pointer;
+  text-transform: lowercase;
+}
+.tab h1 {
+  font-family: "Bree Serif", sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+@font-face{font-family:'Calluna';
+    src:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/callunasansregular-webfont.woff') format('woff');
+   }
+   body {
+       background: url(//subtlepatterns.com/patterns/scribble_light.png);
+     font-family: Calluna, Arial, sans-serif;
+     min-height: 1000px;
+     background-color: #dadada;
+   }
+
+   #columns {
+       column-width: 175px;
+       column-gap: 30px;
+     width: 80%;
+       max-width: 1100px;
+       margin: 50px auto;
+   }
+   
+   div#columns figure {
+       /* background: #fefefe; */
+       /* border: 2px solid #fcfcfc; */
+       box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+       margin: 0 2px 15px;
+       /* padding: 15px; */
+       padding-bottom: 10px;
+       transition: opacity .4s ease-in-out;
+     display: inline-block;
+     border-radius: 3%;
+   }
+   
+   div#columns figure img {
+       width: 100%; height: auto;
+       border-bottom: 1px solid #ccc;
+       /* padding-bottom: 15px; */
+       margin-bottom: 5px;
+       border-radius: 5%;
+   }
+   
+   div#columns figure figcaption {
+    margin-left: 5px;
+     font-size: 1rem;
+       color: #444;
+     line-height: 1.5;
+   }
+   
+   div#columns small { 
+     font-size: 1rem;
+     float: right; 
+     text-transform: uppercase;
+     color: #aaa;
+   } 
+   
+   div#columns small a { 
+     color: #666; 
+     text-decoration: none; 
+     transition: .4s color;
+   }
+   
+   div#columns:hover figure:not(:hover) {
+       opacity: 0.4;
+   }
+
+
+   
+   @media screen and (max-width: 750px) { 
+     #columns { column-gap: 0px; }
+     #columns figure { width: 100%; }
+   }
